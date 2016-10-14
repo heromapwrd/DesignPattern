@@ -1,0 +1,66 @@
+#include "Room.h"
+#include <stdlib.h>
+#include<iostream>
+#include<tchar.h>
+using namespace std;
+#define Name(x) #x
+
+const char* strName[] =
+{
+	Name(ORIENT_EAST),
+	Name(ORIENT_WEST),
+	Name(ORIENT_SOUTH),
+	Name(ORIENT_NORTH)
+};
+const char* GetName(Orient orient)
+{
+	return strName[orient];
+}
+
+int Room::sRoomCount = 0;
+void Room::Enter()
+{
+	
+}
+
+Room::Room(int iNo)
+{
+	IncreaseCount();
+	for (int i = 0; i < ORIENT_NUM; i++)
+	{
+		m_ppOrientSite[i] = NULL;
+	}	
+	m_iRoomNo = iNo;
+	cout << endl<<"Create Room:" << endl;
+	cout << "Room count is:" << sRoomCount << endl;
+	cout << "Room No is:" << m_iRoomNo << endl;
+}
+
+MapSite* Room::SetOrient(Orient orient, MapSite* pSite)
+{
+	if (orient < 0 || orient >= ORIENT_NUM)
+		return NULL;
+	MapSite* pOriginSite = m_ppOrientSite[orient];
+	m_ppOrientSite[orient] = pSite;
+	cout << "Set Orient: " << GetName(orient) << " "<< pSite->GetID() << endl;
+	return pOriginSite;
+}
+
+Room::~Room()
+{
+	for (int i = 0; i < ORIENT_NUM; i++)
+	{
+		m_ppOrientSite[i] = NULL;
+	}
+}
+
+int Room::GetNo()
+{
+	return m_iRoomNo;
+}
+
+void Room::IncreaseCount()
+{
+	sRoomCount++;
+}
+
