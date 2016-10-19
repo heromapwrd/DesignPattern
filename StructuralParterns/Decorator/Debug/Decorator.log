@@ -1,0 +1,7 @@
+﻿  Main.cpp
+  Decorator.cpp
+  ConcreteDecorator.cpp
+  ConcreteComponent.cpp
+  Component.cpp
+  Generating Code...
+  Decorator.vcxproj -> E:\WorkSpace\VS 2013\Design Pattern\StructuralParterns\Debug\Decorator.exe
