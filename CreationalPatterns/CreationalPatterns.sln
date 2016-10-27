@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Factory", "Factory\Factory.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Prototype", "Prototype\Prototype.vcxproj", "{90281F2B-771A-4813-A1BE-F2FB8A08D5A1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Singleton", "Singleton\Singleton.vcxproj", "{22C2CF90-A194-440F-AE03-37BC53BA36E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -39,6 +41,10 @@ Global
 		{90281F2B-771A-4813-A1BE-F2FB8A08D5A1}.Debug|Win32.Build.0 = Debug|Win32
 		{90281F2B-771A-4813-A1BE-F2FB8A08D5A1}.Release|Win32.ActiveCfg = Release|Win32
 		{90281F2B-771A-4813-A1BE-F2FB8A08D5A1}.Release|Win32.Build.0 = Release|Win32
+		{22C2CF90-A194-440F-AE03-37BC53BA36E4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{22C2CF90-A194-440F-AE03-37BC53BA36E4}.Debug|Win32.Build.0 = Debug|Win32
+		{22C2CF90-A194-440F-AE03-37BC53BA36E4}.Release|Win32.ActiveCfg = Release|Win32
+		{22C2CF90-A194-440F-AE03-37BC53BA36E4}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

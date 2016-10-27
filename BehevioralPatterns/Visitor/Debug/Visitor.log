@@ -1,0 +1,9 @@
+﻿  VisitorB.cpp
+  VisitorA.cpp
+  Visitor.cpp
+  Main.cpp
+  ElementB.cpp
+  ElementA.cpp
+  Element.cpp
+  Generating Code...
+  Visitor.vcxproj -> E:\WorkSpace\VS 2013\Design Pattern\BehevioralPatterns\Debug\Visitor.exe
